@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 
 const inputArray = readFileSync('./input.txt', 'utf-8').split('\n');
 
-let values = [];
+let values: number[] = [];
 let currentSum = 0;
 let topThree = 0;
 
