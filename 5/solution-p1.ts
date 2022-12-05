@@ -13,6 +13,7 @@ import { readFileSync } from 'fs';
 
  */
 
+ // TODO: figure out a way to read this directly from the input, not assuming how many arrays/stacks there are.
  const crates: any =[
     ['B', 'W', 'N'], 
     ['L', 'Z', 'S', 'P', 'T', 'D', 'M', 'B'], 
