@@ -1,20 +1,11 @@
 import { readFileSync } from 'fs';
 
-/**
-    [B]             [B] [S]        
-    [M]             [P] [L] [B] [J]
-    [D]     [R]     [V] [D] [Q] [D]
-    [T] [R] [Z]     [H] [H] [G] [C]
-    [P] [W] [J] [B] [J] [F] [J] [S]
-[N] [S] [Z] [V] [M] [N] [Z] [F] [M]
-[W] [Z] [H] [D] [H] [G] [Q] [S] [W]
-[B] [L] [Q] [W] [S] [L] [J] [W] [Z]
- 1   2   3   4   5   6   7   8   9 
+// read the input file
+const inputArray = require('fs').readFileSync('input.txt', 'utf8').split('\n\n');
 
- */
 
  // TODO: figure out a way to read this directly from the input, not assuming how many arrays/stacks there are.
- const crates: any =[
+const crates: any =[
     ['B', 'W', 'N'], 
     ['L', 'Z', 'S', 'P', 'T', 'D', 'M', 'B'], 
     ['Q', 'H', 'Z', 'W', 'R'],
@@ -26,8 +17,7 @@ import { readFileSync } from 'fs';
     ['Z', 'W', 'M', 'S', 'C', 'D', 'J']
  ];
 
-// read the input file
-const instructions = require('fs').readFileSync('input.txt', 'utf8').split('\n');
+const instructions = inputArray[1].split('\n');
 
 for (let instruction of instructions) {
 
